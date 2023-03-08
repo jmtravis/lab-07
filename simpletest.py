@@ -1,8 +1,8 @@
 # Software SPI configuration:
-CLK  = 18
-MISO = 23
-MOSI = 24
-CS   = 25
+CLK  = 13
+MISO = 21
+MOSI = 19
+CS   = 10
 mcp = Adafruit_MCP3008.MCP3008(clk=CLK, cs=CS, miso=MISO, mosi=MOSI)
 
 # Hardware SPI configuration:
