@@ -44,7 +44,7 @@ light_threshold = 100
 sound_threshold = 500
 
 while True:
-     print("LED Blinking 5 Times")
+    print("LED Blinking 5 Times")
     for i in range (0,5):
         GPIO.output(11, True)
         time.sleep(0.5)
