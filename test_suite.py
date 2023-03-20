@@ -44,13 +44,14 @@ light_threshold = 100
 sound_threshold = 500
 
 while True:
-     
+     print("LED Blinking 5 Times")
     for i in range (0,5):
         GPIO.output(11, True)
         time.sleep(0.5)
         GPIO.output(11, False)
         time.sleep(0.5)
 
+    print("Reading light")
     for i in range(0,5):
         light = mcp.read_adc(0)
         
@@ -61,13 +62,14 @@ while True:
         
         time.sleep(0.1)
     
+    print("Blinking 4 times")
     for i in range (0,4):
         GPIO.output(11, True)
         time.sleep(0.2)
         GPIO.output(11, False)
         time.sleep(0.2)
         
-
+    print("Sound Sensor")
     for i in range (0,5):
         sound = mcp.read_adc(1)
         if(sound > sound_threshold):
