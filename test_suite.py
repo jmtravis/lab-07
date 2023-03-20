@@ -1,6 +1,6 @@
 import unittest
 
-from mock import Mock, patch
+
 
 import time 
 import Adafruit_GPIO as GPIO
