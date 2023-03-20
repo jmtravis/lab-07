@@ -65,7 +65,7 @@ while True:
         GPIO.output(11, True)
         time.sleep(0.2)
         GPIO.output(11, False)
-        time.sleep(0,2)
+        time.sleep(0.2)
         
 
     for i in range (0,5):
