@@ -3,12 +3,12 @@ import unittest
 
 
 import time 
-import Adafruit_GPIO as GPIO
+import Adafruit_GPIO 
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_GPIO.Platform as Platform
 
 
-import RPi.GPIO 
+import RPi.GPIO as GPIO
 
 
 # Simple example of reading the MCP3008 analog input channels and printing
