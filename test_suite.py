@@ -34,6 +34,9 @@ SPI_PORT   = 0
 SPI_DEVICE = 0
 mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 
+GPIO.setup(11, GPIO.OUT)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
 
 print('Reading MCP3008 values, press Ctrl-C to quit...')
 # Print nice channel column headers.
