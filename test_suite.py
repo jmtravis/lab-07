@@ -7,7 +7,7 @@ import Adafruit_GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_GPIO.Platform as Platform
 
-from MockGPIO import MockGPIO
+
 import RPi.GPIO 
 
 
